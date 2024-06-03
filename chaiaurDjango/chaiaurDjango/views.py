@@ -5,7 +5,7 @@ def home(request):
     return render(request, 'index.html')
 
 def about(request):
-    return HttpResponse("Hello, World. You are at Chai aur Django About Page ")
+    return render(request, 'about.html')
 
 def contact(request):
-    return HttpResponse("Hello, World. You are at Chai aur Django Contact Page ")
+    return render(request, 'contact.html')
