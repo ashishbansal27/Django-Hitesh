@@ -7,7 +7,7 @@
     <div class="bg-blue-800 p-5 rounded" >
         <img class="rounded shadow-lg" src="{{chai.image.url}}" alt="">
         <h3 class="font-bold">{{chai.name}}</h3>
-        <a href='#'>
+        <a href="{% url 'chai_detail' chai.id%}">
             <button type="button">{{chai.type}} - {{chai.id}}</button>
         </a>
     </div>
