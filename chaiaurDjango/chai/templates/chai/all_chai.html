@@ -2,7 +2,11 @@
 {% block title %}All Chai{% endblock %}
 {% block content %}
 <h1>All Chai for you!</h1>
-<div class="grid grid-cols-3 gap-4 m-4">
+<div class="grid gap-4 m-4 grid-cols-1
+        sm:grid-cols-2
+        md:grid-cols-4
+        lg:grid-cols-6
+        xl:grid-cols-8">
     {% for chai in chais  %}
     <div class="bg-blue-800 p-5 rounded" >
         <img class="rounded shadow-lg" src="{{chai.image.url}}" alt="">
